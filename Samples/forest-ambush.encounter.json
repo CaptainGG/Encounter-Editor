@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "projectName": "Forest Ambush",
+  "map": {
+    "width": 2400,
+    "height": 1400,
+    "gridSize": 40,
+    "backgroundImagePath": ""
+  },
+  "zones": [
+    {
+      "id": "zone_001",
+      "displayName": "Forest Entry",
+      "name": "Forest Entry",
+      "difficulty": 1,
+      "faction": 2,
+      "recommendedPlayerLevel": 7,
+      "x": 160,
+      "y": 120,
+      "width": 420,
+      "height": 260,
+      "objectType": 0
+    },
+    {
+      "id": "zone_002",
+      "displayName": "Bridge Crossing",
+      "name": "Bridge Crossing",
+      "difficulty": 2,
+      "faction": 2,
+      "recommendedPlayerLevel": 10,
+      "x": 700,
+      "y": 240,
+      "width": 420,
+      "height": 260,
+      "objectType": 0
+    }
+  ],
+  "spawnPoints": [
+    {
+      "id": "spawn_001",
+      "displayName": "Forward Scouts",
+      "archetype": "Scout",
+      "count": 2,
+      "delaySeconds": 0,
+      "facingDegrees": 180,
+      "linkedZoneId": "zone_001",
+      "position": {
+        "x": 320,
+        "y": 240
+      },
+      "objectType": 1
+    },
+    {
+      "id": "spawn_002",
+      "displayName": "Bridge Hold",
+      "archetype": "Rifle Guard",
+      "count": 4,
+      "delaySeconds": 2,
+      "facingDegrees": 270,
+      "linkedZoneId": "zone_002",
+      "position": {
+        "x": 880,
+        "y": 360
+      },
+      "objectType": 1
+    }
+  ],
+  "patrolRoutes": [
+    {
+      "id": "route_001",
+      "displayName": "Bridge Sweep",
+      "speed": 1.5,
+      "loop": true,
+      "points": [
+        {
+          "x": 760,
+          "y": 320
+        },
+        {
+          "x": 1040,
+          "y": 320
+        },
+        {
+          "x": 1040,
+          "y": 480
+        }
+      ],
+      "objectType": 2
+    }
+  ]
+}
+
