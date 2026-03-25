@@ -2,7 +2,7 @@
 
 `Encounter Editor` is a small WPF desktop tool built to demonstrate editor-facing, UX-sensitive tools programming. The project focuses on helping a level designer place and tune encounter content inside a fast authoring loop with validation, undo/redo, and clean JSON persistence.
 
-## Why This Fits The Role
+## What this does?
 
 - It is a desktop editor, not a generic business CRUD app.
 - The workflow is built around content creators: create, inspect, move, validate, and save without leaving the editor.
